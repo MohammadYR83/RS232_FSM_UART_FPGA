@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.syr" 
+vhdtdtfi -prj RS232_FSM_UART -o D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.vhi -module RS232_Transmitter -template D:/mohammad/fpga/ise_program/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RS232_Transmitter.vhd 
+vhdtdtfi -prj RS232_FSM_UART -o D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter.vhi -module RS232_Transmitter -template D:/mohammad/fpga/ise_program/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RS232_Transmitter.vhd 

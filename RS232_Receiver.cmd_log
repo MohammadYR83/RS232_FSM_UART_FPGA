@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.syr" 
+xst -intstyle ise -ifn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.xst" -ofn "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.syr" 
+vhdtdtfi -prj RS232_FSM_UART -o D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.vhi -module RS232_Receiver -template D:/mohammad/fpga/ise_program/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RS232_Receiver.vhd 
+vhdtdtfi -prj RS232_FSM_UART -o D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.vhi -module RS232_Receiver -template D:/mohammad/fpga/ise_program/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RS232_Receiver.vhd 
+vhdtdtfi -lib work RS232_Receiver.vhd -prj RS232_FSM_UART -o RS232_Receiver.spl -module RS232_Receiver -template D:/mohammad/fpga/ise_program/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 RS232_Receiver.spl D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Receiver.sym 

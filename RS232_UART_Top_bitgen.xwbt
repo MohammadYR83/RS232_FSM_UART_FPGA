@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\mohammad\FPGA\ise_project\RS232_FSM_UART\RS232_UART_Top.ncd
+OUTFILE=D:\mohammad\FPGA\ise_project\RS232_FSM_UART\RS232_UART_Top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\mohammad\FPGA\ise_project\RS232_FSM_UART
+LICENSE=WebPack
+USER_INFO=__0_0_0

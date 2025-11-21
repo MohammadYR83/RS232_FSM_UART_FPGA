@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Nov 21 19:49:50 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "serial_out" LOCATE = SITE "P119" LEVEL 1;
+COMP "serial_in" LOCATE = SITE "P118" LEVEL 1;
+COMP "clock_in" LOCATE = SITE "P50" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter_tb_isim_beh.exe" -prj "D:/mohammad/FPGA/ise_project/RS232_FSM_UART/RS232_Transmitter_tb_beh.prj" "work.RS232_Transmitter_tb" 

@@ -1,0 +1,4 @@
+NET "clock_in"	LOC = P50;
+
+NET "serial_out" LOC = P119;  # TX = W3_1
+NET "serial_in"  LOC = P118;  # RX = W3_2

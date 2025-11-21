@@ -1,0 +1,7 @@
+vhdl work "ipcore_dir/DCM.vhd"
+vhdl work "ipcore_dir/ICON.vhd"
+vhdl work "ipcore_dir/VIO.vhd"
+vhdl work "ipcore_dir/ILA.vhd"
+vhdl work "RS232_Transmitter.vhd"
+vhdl work "RS232_Receiver.vhd"
+vhdl work "RS232_UART_Top.vhd"

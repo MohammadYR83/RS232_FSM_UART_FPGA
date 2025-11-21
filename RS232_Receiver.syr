@@ -1,0 +1,425 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: RS232_Receiver.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RS232_Receiver.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RS232_Receiver"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : RS232_Receiver
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\mohammad\FPGA\ise_project\RS232_FSM_UART\RS232_Receiver.vhd" into library work
+Parsing entity <RS232_Receiver>.
+Parsing architecture <Behavioral> of entity <rs232_receiver>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <RS232_Receiver> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\mohammad\FPGA\ise_project\RS232_FSM_UART\RS232_Receiver.vhd" Line 177. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <RS232_Receiver>.
+    Related source file is "D:\mohammad\FPGA\ise_project\RS232_FSM_UART\RS232_Receiver.vhd".
+    Found 1-bit register for signal <serial_sync1>.
+    Found 1-bit register for signal <valid_flag>.
+    Found 3-bit register for signal <next_state>.
+    Found 13-bit register for signal <baud_tick_count>.
+    Found 8-bit register for signal <data_reg>.
+    Found 1-bit register for signal <parity_rxd_bit>.
+    Found 4-bit register for signal <bit_index>.
+    Found 1-bit register for signal <parity_txd_bit>.
+    Found 1-bit register for signal <stop_bit_flag>.
+    Found 3-bit register for signal <current_state>.
+    Found 1-bit register for signal <serial_sync0>.
+    Found 4-bit adder for signal <bit_index[3]_GND_4_o_add_9_OUT> created at line 1241.
+    Found 13-bit adder for signal <baud_tick_count[12]_GND_4_o_add_21_OUT> created at line 1241.
+    Found 3-bit 6-to-1 multiplexer for signal <current_state[2]_X_4_o_wide_mux_30_OUT> created at line 99.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred  25 Multiplexer(s).
+Unit <RS232_Receiver> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 13-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 6
+ 13-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 8
+ 13-bit 2-to-1 multiplexer                             : 7
+ 3-bit 2-to-1 multiplexer                              : 8
+ 3-bit 6-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <RS232_Receiver>.
+The following registers are absorbed into counter <bit_index>: 1 register on signal <bit_index>.
+Unit <RS232_Receiver> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 13-bit adder                                          : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 8
+ 13-bit 2-to-1 multiplexer                             : 7
+ 3-bit 2-to-1 multiplexer                              : 8
+ 3-bit 6-to-1 multiplexer                              : 1
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <RS232_Receiver> ...
+WARNING:Xst:1293 - FF/Latch <bit_index_3> has a constant value of 0 in block <RS232_Receiver>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RS232_Receiver, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <RS232_Receiver> :
+	Found 2-bit shift register for signal <serial_sync1>.
+Unit <RS232_Receiver> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : RS232_Receiver.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 96
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 12
+#      LUT2                        : 3
+#      LUT3                        : 5
+#      LUT4                        : 5
+#      LUT5                        : 5
+#      LUT6                        : 38
+#      MUXCY                       : 12
+#      VCC                         : 1
+#      XORCY                       : 13
+# FlipFlops/Latches                : 35
+#      FD                          : 10
+#      FDE                         : 25
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 1
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              35  out of  18224     0%  
+ Number of Slice LUTs:                   70  out of   9112     0%  
+    Number used as Logic:                69  out of   9112     0%  
+    Number used as Memory:                1  out of   2176     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     73
+   Number with an unused Flip Flop:      38  out of     73    52%  
+   Number with an unused LUT:             3  out of     73     4%  
+   Number of fully used LUT-FF pairs:    32  out of     73    43%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock_in                           | BUFGP                  | 36    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.604ns (Maximum Frequency: 178.444MHz)
+   Minimum input arrival time before clock: 2.009ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_in'
+  Clock period: 5.604ns (frequency: 178.444MHz)
+  Total number of paths / destination ports: 989 / 59
+-------------------------------------------------------------------------
+Delay:               5.604ns (Levels of Logic = 4)
+  Source:            baud_tick_count_4 (FF)
+  Destination:       next_state_0 (FF)
+  Source Clock:      clock_in rising
+  Destination Clock: clock_in rising
+
+  Data Path: baud_tick_count_4 to next_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.525   1.196  baud_tick_count_4 (baud_tick_count_4)
+     LUT5:I0->O            6   0.254   0.876  baud_tick_count[12]_PWR_4_o_equal_23_o<12>_SW0 (N01)
+     LUT6:I5->O           18   0.254   1.235  baud_tick_count[12]_PWR_4_o_equal_23_o<12> (baud_tick_count[12]_PWR_4_o_equal_23_o)
+     LUT6:I5->O            1   0.254   0.682  Mmux_current_state[2]_X_4_o_wide_mux_30_OUT63 (Mmux_current_state[2]_X_4_o_wide_mux_30_OUT62)
+     LUT4:I3->O            1   0.254   0.000  Mmux_current_state[2]_X_4_o_wide_mux_30_OUT64 (current_state[2]_X_4_o_wide_mux_30_OUT<2>)
+     FD:D                      0.074          next_state_2
+    ----------------------------------------
+    Total                      5.604ns (1.615ns logic, 3.989ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_in'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.009ns (Levels of Logic = 1)
+  Source:            serial_in (PAD)
+  Destination:       Mshreg_serial_sync1 (FF)
+  Destination Clock: clock_in rising
+
+  Data Path: serial_in to Mshreg_serial_sync1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  serial_in_IBUF (serial_in_IBUF)
+     SRLC16E:D                -0.060          Mshreg_serial_sync1
+    ----------------------------------------
+    Total                      2.009ns (1.328ns logic, 0.681ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_in'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            data_reg_7 (FF)
+  Destination:       data_out<7> (PAD)
+  Source Clock:      clock_in rising
+
+  Data Path: data_reg_7 to data_out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.725  data_reg_7 (data_reg_7)
+     OBUF:I->O                 2.912          data_out_7_OBUF (data_out<7>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock_in
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock_in       |    5.604|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.38 secs
+ 
+--> 
+
+Total memory usage is 4486924 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
